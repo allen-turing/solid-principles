@@ -1,6 +1,6 @@
 ﻿namespace ISP
 {
-	public class ModernPrinter : IMachine
+	public class ModernPrinter : IPrinter, IScanner, IFaxer
 	{
 		public void Fax(Document document)
 		{

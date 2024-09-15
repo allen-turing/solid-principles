@@ -1,6 +1,6 @@
 ﻿namespace ISP
 {
-	public interface IMachine
+	public interface IFaxer
 	{
 		void Fax(Document document);
 	}
