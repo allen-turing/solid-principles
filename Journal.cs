@@ -16,9 +16,9 @@
 			_entries.RemoveAt(index);
 		}
 
-		public void SaveEntry(string fileName, bool overWrite = false)
+		public string GetLatestEntry()
 		{
-			File.WriteAllText(fileName, _entries[_entries.Count - 1]);
+			return _entries[_entries.Count - 1];
 		}
 	}
 }

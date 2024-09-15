@@ -2,4 +2,5 @@
 
 var journal = new Journal();
 journal.AddEntry("I did something today!");
-journal.SaveEntry("File 1.txt");
+var persistenceManager = new PersistenceManager();
+persistenceManager.SaveEntry(journal, "File 1.txt");
