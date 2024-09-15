@@ -11,5 +11,10 @@
 		{
 			return products.Where(p => p.Color == color);
 		}
+
+		public IEnumerable<Product> ProductFilterBySizeAndColor(IEnumerable<Product> products, Size size, Color color)
+		{
+			return products.Where(p => p.Size == size && p.Color == color);
+		}
 	}
 }
